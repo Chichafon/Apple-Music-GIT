@@ -11,6 +11,7 @@
 		82C7EBDB27A9518F00BBFB44 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBDA27A9518F00BBFB44 /* TabBar.swift */; };
 		82C7EBDD27A9519400BBFB44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C7EBDC27A9519400BBFB44 /* Assets.xcassets */; };
 		82C7EBE027A9519400BBFB44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C7EBDF27A9519400BBFB44 /* Preview Assets.xcassets */; };
+		82C7EBEE27A98FE300BBFB44 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBED27A98FE300BBFB44 /* LibraryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		82C7EBDA27A9518F00BBFB44 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		82C7EBDC27A9519400BBFB44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82C7EBDF27A9519400BBFB44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82C7EBED27A98FE300BBFB44 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		82C7EBE727A98B4200BBFB44 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				82C7EBE927A98F2400BBFB44 /* Moduls */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -89,6 +92,38 @@
 				82C7EBDA27A9518F00BBFB44 /* TabBar.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		82C7EBE927A98F2400BBFB44 /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				82C7EBEC27A98F8300BBFB44 /* LibraryTabView */,
+				82C7EBEB27A98F7200BBFB44 /* RadioTabView */,
+				82C7EBEA27A98F5800BBFB44 /* SearchTabView */,
+			);
+			path = Moduls;
+			sourceTree = "<group>";
+		};
+		82C7EBEA27A98F5800BBFB44 /* SearchTabView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchTabView;
+			sourceTree = "<group>";
+		};
+		82C7EBEB27A98F7200BBFB44 /* RadioTabView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RadioTabView;
+			sourceTree = "<group>";
+		};
+		82C7EBEC27A98F8300BBFB44 /* LibraryTabView */ = {
+			isa = PBXGroup;
+			children = (
+				82C7EBED27A98FE300BBFB44 /* LibraryView.swift */,
+			);
+			path = LibraryTabView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82C7EBDB27A9518F00BBFB44 /* TabBar.swift in Sources */,
+				82C7EBEE27A98FE300BBFB44 /* LibraryView.swift in Sources */,
 				82C7EBD927A9518F00BBFB44 /* Apple_Music_GITApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
