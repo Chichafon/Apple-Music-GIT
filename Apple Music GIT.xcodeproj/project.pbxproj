@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		82C7EBD927A9518F00BBFB44 /* Apple_Music_GITApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBD827A9518F00BBFB44 /* Apple_Music_GITApp.swift */; };
-		82C7EBDB27A9518F00BBFB44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBDA27A9518F00BBFB44 /* ContentView.swift */; };
+		82C7EBDB27A9518F00BBFB44 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBDA27A9518F00BBFB44 /* TabBar.swift */; };
 		82C7EBDD27A9519400BBFB44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C7EBDC27A9519400BBFB44 /* Assets.xcassets */; };
 		82C7EBE027A9519400BBFB44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C7EBDF27A9519400BBFB44 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		82C7EBD527A9518F00BBFB44 /* Apple Music GIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Music GIT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C7EBD827A9518F00BBFB44 /* Apple_Music_GITApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_Music_GITApp.swift; sourceTree = "<group>"; };
-		82C7EBDA27A9518F00BBFB44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		82C7EBDA27A9518F00BBFB44 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		82C7EBDC27A9519400BBFB44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82C7EBDF27A9519400BBFB44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,8 +51,9 @@
 		82C7EBD727A9518F00BBFB44 /* Apple Music GIT */ = {
 			isa = PBXGroup;
 			children = (
-				82C7EBD827A9518F00BBFB44 /* Apple_Music_GITApp.swift */,
-				82C7EBDA27A9518F00BBFB44 /* ContentView.swift */,
+				82C7EBE827A98B5000BBFB44 /* TabBar */,
+				82C7EBE727A98B4200BBFB44 /* View */,
+				82C7EBE627A98B3B00BBFB44 /* App */,
 				82C7EBDC27A9519400BBFB44 /* Assets.xcassets */,
 				82C7EBDE27A9519400BBFB44 /* Preview Content */,
 			);
@@ -65,6 +66,29 @@
 				82C7EBDF27A9519400BBFB44 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		82C7EBE627A98B3B00BBFB44 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				82C7EBD827A9518F00BBFB44 /* Apple_Music_GITApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		82C7EBE727A98B4200BBFB44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82C7EBE827A98B5000BBFB44 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				82C7EBDA27A9518F00BBFB44 /* TabBar.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82C7EBDB27A9518F00BBFB44 /* ContentView.swift in Sources */,
+				82C7EBDB27A9518F00BBFB44 /* TabBar.swift in Sources */,
 				82C7EBD927A9518F00BBFB44 /* Apple_Music_GITApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

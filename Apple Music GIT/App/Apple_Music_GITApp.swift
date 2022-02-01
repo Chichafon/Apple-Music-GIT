@@ -11,7 +11,7 @@ import SwiftUI
 struct Apple_Music_GITApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBar()
         }
     }
 }
