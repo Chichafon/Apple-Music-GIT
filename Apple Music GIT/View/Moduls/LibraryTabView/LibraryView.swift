@@ -32,7 +32,7 @@ struct LibraryView: View {
                         }
                     } else {
                         VStack {
-                            Text("TO DO")
+                            LibraryViewSecondScreen()
                         }
                     }
                 }

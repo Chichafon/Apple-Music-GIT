@@ -12,6 +12,8 @@
 		82C7EBDD27A9519400BBFB44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C7EBDC27A9519400BBFB44 /* Assets.xcassets */; };
 		82C7EBE027A9519400BBFB44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C7EBDF27A9519400BBFB44 /* Preview Assets.xcassets */; };
 		82C7EBEE27A98FE300BBFB44 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBED27A98FE300BBFB44 /* LibraryView.swift */; };
+		82C7EBF327A9983800BBFB44 /* LibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBF227A9983800BBFB44 /* LibraryModel.swift */; };
+		82C7EBF527A99A4500BBFB44 /* LibraryViewSecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBF427A99A4500BBFB44 /* LibraryViewSecondScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		82C7EBDC27A9519400BBFB44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82C7EBDF27A9519400BBFB44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		82C7EBED27A98FE300BBFB44 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		82C7EBF227A9983800BBFB44 /* LibraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryModel.swift; sourceTree = "<group>"; };
+		82C7EBF427A99A4500BBFB44 /* LibraryViewSecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewSecondScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 		82C7EBD727A9518F00BBFB44 /* Apple Music GIT */ = {
 			isa = PBXGroup;
 			children = (
+				82C7EBEF27A9948500BBFB44 /* Models */,
 				82C7EBE827A98B5000BBFB44 /* TabBar */,
 				82C7EBE727A98B4200BBFB44 /* View */,
 				82C7EBE627A98B3B00BBFB44 /* App */,
@@ -122,8 +127,17 @@
 			isa = PBXGroup;
 			children = (
 				82C7EBED27A98FE300BBFB44 /* LibraryView.swift */,
+				82C7EBF427A99A4500BBFB44 /* LibraryViewSecondScreen.swift */,
 			);
 			path = LibraryTabView;
+			sourceTree = "<group>";
+		};
+		82C7EBEF27A9948500BBFB44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82C7EBF227A9983800BBFB44 /* LibraryModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,9 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C7EBF527A99A4500BBFB44 /* LibraryViewSecondScreen.swift in Sources */,
 				82C7EBDB27A9518F00BBFB44 /* TabBar.swift in Sources */,
 				82C7EBEE27A98FE300BBFB44 /* LibraryView.swift in Sources */,
 				82C7EBD927A9518F00BBFB44 /* Apple_Music_GITApp.swift in Sources */,
+				82C7EBF327A9983800BBFB44 /* LibraryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
