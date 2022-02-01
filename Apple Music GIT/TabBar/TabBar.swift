@@ -9,8 +9,25 @@ import SwiftUI
 
 struct TabBar: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            Text("")
+                .tabItem {
+                    Image(systemName: "rectangle.stack.badge.play")
+                    Text("Медиатека")
+                }
+            Text("")
+                .tabItem {
+                    Image(systemName: "dot.radiowaves.left.and.right")
+                    Text("Радио")
+                }
+
+            Text("")
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Поиск")
+                }
+        }
+        .accentColor(Color.red)
     }
 }
 
