@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TabBar: View {
+
     var body: some View {
         ZStack {
             TabView {
@@ -31,9 +32,6 @@ struct TabBar: View {
             .accentColor(Color.red)
 
             PlayerView()
-                .frame(width: 420, height: 200, alignment: .init(horizontal: .center, vertical: .center))
-                .padding(.top, 530)
-                .background(Color.clear)
         }
     }
 }

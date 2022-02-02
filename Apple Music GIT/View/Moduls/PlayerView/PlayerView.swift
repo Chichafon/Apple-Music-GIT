@@ -13,41 +13,71 @@ struct PlayerView: View {
             ZStack {
                 Rectangle()
                     .stroke()
-                    .frame(height: 100)
+                    .frame(height: Metric.rectangleHeight)
                     .background(Color.gray)
-                    .opacity(0.1)
+                    .opacity(Metric.rectangleOpacity)
 
                 HStack {
                     VStack {
                         HStack {
                             Image("shadowMan")
-                                .padding([.top, .bottom, .leading], 10)
+                                .resizable()
+                                .frame(width: 90, height: 70, alignment: .bottomLeading)
+                                .padding([.top, .bottom, .leading], Metric.firstPaddingOffset)
                         }
                     }
-                    .padding(.trailing, 10)
+                    .padding(.trailing, Metric.firstPaddingOffset)
 
                     VStack(alignment: .center) {
                         Text("COMPLEXITES")
                             .font(.title3)
                     }
-                    .padding(.trailing, 30)
+                    .padding(.trailing, Metric.secondPaddingOffset)
 
                     VStack {
-                        Image(systemName: "play.fill")
-                            .font(.system(size: 30))
+                        Button {} label: {
+                            Image(systemName: "play.fill")
+                                .font(.title)
+                                .foregroundColor(.primary)
+                        }
                     }
-                    .padding(.trailing, 10)
-
+                    .padding(.trailing, Metric.firstPaddingOffset)
 
                     VStack {
-                        Image(systemName: "forward.fill")
-                            .font(.system(size: 30))
-                            .padding(.trailing, 40)
-                            .foregroundColor(.gray)
+                        Button {} label: {
+                            Image(systemName: "forward.fill")
+                                .font(.title)
+                                .foregroundColor(.primary)
+                                .padding(.trailing, Metric.thirdPaddingOffset)
+                        }
                     }
                 }
             }
         }
+        .frame(width: Metric.playerViewWidth, height: Metric.playerViewHeight, alignment: .init(horizontal: .center, vertical: .center))
+        .padding(.top, Metric.paddingOffset)
+        .background(Color.clear)
     }
 }
+
+struct PlayerView_Previews: PreviewProvider {
+    static var previews: some View {
+        PlayerView()
+    }
+}
+
+extension PlayerView {
+    enum Metric {
+        static let rectangleHeight: CGFloat = 85
+        static let rectangleOpacity: CGFloat = 0.1
+        static let firstPaddingOffset: CGFloat = 10
+        static let secondPaddingOffset: CGFloat = 30
+        static let thirdPaddingOffset: CGFloat = 30
+        static let imageFontSize: CGFloat = 30
+        static let playerViewWidth: CGFloat = 420
+        static let playerViewHeight: CGFloat = 200
+        static let paddingOffset: CGFloat = 540
+    }
+}
+
 
