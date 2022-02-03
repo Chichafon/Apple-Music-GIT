@@ -9,13 +9,10 @@ import SwiftUI
 
 struct PlayerView: View {
     var body: some View {
-        NavigationView {
             ZStack {
                 Rectangle()
-                    .stroke()
-                    .frame(height: Metric.rectangleHeight)
-                    .background(Color.gray)
-                    .opacity(Metric.rectangleOpacity)
+                    .foregroundColor(.init(UIColor.systemGray6))
+                    .frame(height: Metric.rectangleHeight).border(Color.white)
 
                 HStack {
                     VStack {
@@ -52,11 +49,9 @@ struct PlayerView: View {
                         }
                     }
                 }
-            }
         }
         .frame(width: Metric.playerViewWidth, height: Metric.playerViewHeight, alignment: .init(horizontal: .center, vertical: .center))
         .padding(.top, Metric.paddingOffset)
-        .background(Color.clear)
     }
 }
 
@@ -76,7 +71,7 @@ extension PlayerView {
         static let imageFontSize: CGFloat = 30
         static let playerViewWidth: CGFloat = 420
         static let playerViewHeight: CGFloat = 200
-        static let paddingOffset: CGFloat = 540
+        static let paddingOffset: CGFloat = 663
     }
 }
 
