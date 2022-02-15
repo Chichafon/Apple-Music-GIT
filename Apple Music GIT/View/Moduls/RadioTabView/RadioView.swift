@@ -12,9 +12,15 @@ struct RadioView: View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
-                    HorizontalSection()
+                    Divider()
+
+                    RadioViewHorizontalSection()
+
+                    Divider()
+
                     Spacer()
-                    VerticalSection()
+
+                    RadioViewVerticalSection()
                 }
             }
             .navigationBarTitle("Радио")

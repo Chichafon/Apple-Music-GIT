@@ -7,6 +7,6 @@
 
 import Foundation
 
-class RadioModelVerticalObserver: ObservableObject {
-    @Published var data = RadioModelVertical.data
+class RadioModelVerticalSectionObserver: ObservableObject {
+    @Published var data = RadioModelVerticalSection.data
 }

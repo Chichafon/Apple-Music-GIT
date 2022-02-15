@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct VerticalSection: View {
+struct RadioViewVerticalSection: View {
 
-    @ObservedObject var dataModel = RadioModelVerticalObserver()
+    @ObservedObject var dataModel = RadioModelVerticalSectionObserver()
 
     var columns = [GridItem(.flexible())]
 
@@ -18,7 +18,8 @@ struct VerticalSection: View {
             LazyVGrid(columns: columns, alignment: .leading, spacing: Metric.lazyVGridSpacing) {
 
                 Text("Станции")
-                    .font(.title).bold()
+                    .font(.title)
+                    .bold()
 
                 ForEach(dataModel.data, id: \.id) { data in
                     VStack {
@@ -46,11 +47,12 @@ struct VerticalSection: View {
                 }
             }
             .padding()
+            .padding(.bottom, 80)
         }
     }
 }
 
-extension VerticalSection {
+extension RadioViewVerticalSection {
     enum Metric {
         static let imageFrameWidth: CGFloat = 120
         static let imageFrameHeight: CGFloat = 120
@@ -64,8 +66,8 @@ extension VerticalSection {
     }
 }
 
-struct VerticalSection_Previews: PreviewProvider {
+struct RadioViewVerticalSection_Previews: PreviewProvider {
     static var previews: some View {
-        VerticalSection()
+        RadioViewVerticalSection()
     }
 }

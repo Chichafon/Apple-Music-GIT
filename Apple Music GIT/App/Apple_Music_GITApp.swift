@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Apple_Music_GITApp: App {
+
+    @StateObject var dataModel = RadioModelHorizontalSectionObserver()
+
     var body: some Scene {
         WindowGroup {
             TabBar()
+                .environmentObject(dataModel)
         }
     }
 }

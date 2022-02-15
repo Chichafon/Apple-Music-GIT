@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct HorizontalSection: View {
+struct RadioViewHorizontalSection: View {
 
-    @ObservedObject var dataModel = RadioModelHorizontalObserver()
+    @ObservedObject var dataModel = RadioModelHorizontalSectionObserver()
 
     var rows = [GridItem(.flexible())]
 
@@ -17,9 +17,7 @@ struct HorizontalSection: View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: rows, spacing: Metric.lazyHGridSpacing) {
                 ForEach(dataModel.data, id: \.id) { data in
-                    VStack(alignment: .center) {
-                        Divider()
-
+                    VStack(alignment: .leading) {
                         Text(data.firstTitle)
                             .foregroundColor(.gray)
                             .font(.system(size: Metric.textFontSizeTitleLabel))
@@ -38,16 +36,16 @@ struct HorizontalSection: View {
                             .scaledToFill()
                             .cornerRadius(Metric.imageCornerRadius)
 
-                        Divider()
                     }
                     .padding(.leading, 20)
+                    .padding(.trailing, 10)
                 }
             }
         }
     }
 }
 
-extension HorizontalSection {
+extension RadioViewHorizontalSection {
 
     enum Metric {
         static let imageFrameWidth: CGFloat = 360
@@ -64,8 +62,8 @@ extension HorizontalSection {
     }
 }
 
-struct HorizontalSection_Previews: PreviewProvider {
+struct RadioViewHorizontalSection_Previews: PreviewProvider {
     static var previews: some View {
-        HorizontalSection()
+        RadioViewHorizontalSection()
     }
 }
