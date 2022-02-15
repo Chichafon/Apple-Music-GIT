@@ -17,20 +17,20 @@ struct TabBar: View {
                         Image(systemName: "rectangle.stack.badge.play")
                         Text("Медиатека")
                     }
-                 RadioView()
+                RadioView()
                     .tabItem {
                         Image(systemName: "dot.radiowaves.left.and.right")
                         Text("Радио")
                     }
 
-                Text("")
+                SearchView()
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")
                     }
             }
             .accentColor(Color.red)
-
+            
             PlayerView()
         }
     }
@@ -39,5 +39,7 @@ struct TabBar: View {
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar()
+            .environmentObject(RadioModelHorizontalSectionObserver())
+            .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
     }
 }

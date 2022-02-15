@@ -8,50 +8,232 @@
 import SwiftUI
 
 struct PlayerView: View {
+
+    @State var showPlayer = false
+    @State var progressBar: CGFloat = 0
+    @Namespace var namespace
+
     var body: some View {
-            ZStack {
-                Rectangle()
-                    .foregroundColor(.init(UIColor.systemGray6))
-                    .frame(height: Metric.rectangleHeight).border(Color.white)
+        if !self.showPlayer {
+            VStack {
 
-                HStack {
-                    VStack {
-                        HStack {
-                            Image("shadowMan")
-                                .resizable()
-                                .frame(width: 90, height: 70, alignment: .bottomLeading)
-                                .padding([.top, .bottom, .leading], Metric.firstPaddingOffset)
+                Spacer()
+
+                VStack(spacing: 15) {
+                    HStack(spacing: 15) {
+
+                        // resizing image
+
+                        Image("shadowMan")
+                            .resizable()
+                            .frame(width: self.showPlayer ? Metric.imageFrameWidthAndHeight : Metric.imageResizingWidth,
+                                   height: self.showPlayer ? Metric.imageFrameWidthAndHeight : Metric.imageResizingHeight)
+                            .padding(.top, self.showPlayer ? Metric.imagePadding : Metric.imageResizingPadding)
+
+                        // hiding view if it expanded
+
+                        if !self.showPlayer {
+
+                            HStack {
+                                VStack(alignment: .center) {
+                                    Text("COMPLEXITES")
+                                        .font(.title3)
+                                }
+                                .matchedGeometryEffect(id: "Details",
+                                                       in: self.namespace)
+
+                                Spacer()
+
+                                Button {} label: {
+                                    Image(systemName: "play.fill")
+                                        .font(.title)
+                                        .foregroundColor(.primary)
+                                }
+                                .matchedGeometryEffect(id: "play",
+                                                       in: self.namespace)
+
+                                Button {} label: {
+                                    Image(systemName: "forward.fill")
+                                        .font(.title)
+                                        .foregroundColor(.primary)
+                                }
+                                .matchedGeometryEffect(id: "forward",
+                                                       in: self.namespace)
+                            }
                         }
                     }
-                    .padding(.trailing, Metric.firstPaddingOffset)
 
-                    VStack(alignment: .center) {
-                        Text("COMPLEXITES")
-                            .font(.title3)
-                    }
-                    .padding(.trailing, Metric.secondPaddingOffset)
+                    // moving view up
 
-                    VStack {
-                        Button {} label: {
-                            Image(systemName: "play.fill")
-                                .font(.title)
-                                .foregroundColor(.primary)
-                        }
-                    }
-                    .padding(.trailing, Metric.firstPaddingOffset)
+                    if self.showPlayer {
 
-                    VStack {
-                        Button {} label: {
-                            Image(systemName: "forward.fill")
-                                .font(.title)
-                                .foregroundColor(.primary)
-                                .padding(.trailing, Metric.thirdPaddingOffset)
+                        VStack {
+                            VStack(alignment: .center) {
+                                Text("COMPLEXITES")
+                                    .font(.title3)
+                            }
+                            .matchedGeometryEffect(id: "Details",
+                                                   in: self.namespace)
+
+                            Slider(value: self.$progressBar)
+
+                            HStack {
+                                Button {} label: {
+                                    Image(systemName: "backward.fill")
+                                        .font(.title)
+                                        .foregroundColor(.primary)
+                                }
+
+                                Spacer()
+
+                                Button {} label: {
+                                    Image(systemName: "play.fill")
+                                        .font(.title)
+                                        .foregroundColor(.primary)
+                                }
+                                .matchedGeometryEffect(id: "play",
+                                                       in: self.namespace)
+
+                                Spacer()
+
+                                Button {} label: {
+                                    Image(systemName: "forward.fill")
+                                        .font(.title)
+                                        .foregroundColor(.primary)
+                                }
+                                .matchedGeometryEffect(id: "forward",
+                                                       in: self.namespace)
+                            }
+                            .padding(.horizontal)
+
+                            Spacer()
                         }
                     }
                 }
+                .padding(.all)
+                .background(Color.white.shadow(radius: Metric.shadowRadius)
+                                .onTapGesture {
+
+                    // view expand
+
+                    withAnimation(Animation.easeOut(duration: Metric.animationDuration)) {
+                        self.showPlayer.toggle()
+                    }
+                }
+                )
+            }
+            .frame(height: Metric.frameVStackHeight)
+            .padding(.top, Metric.frameVStackPaddingTop)
+        } else {
+            VStack {
+
+                Spacer()
+
+                VStack(spacing: 15) {
+                    HStack(spacing: 15) {
+
+                        // resizing image
+
+                        Image("shadowMan")
+                            .resizable()
+                            .frame(width: self.showPlayer ? Metric.imageFrameWidthAndHeight : Metric.imageResizingWidth,
+                                   height: self.showPlayer ? Metric.imageFrameWidthAndHeight : Metric.imageResizingHeight)
+                            .padding(.top, self.showPlayer ? Metric.imagePadding : Metric.imageResizingPadding)
+
+                        // hiding view if it expanded
+
+                        if !self.showPlayer {
+
+                            HStack {
+                                VStack(alignment: .center) {
+                                    Text("COMPLEXITES")
+                                        .font(.title3)
+                                }
+                                .matchedGeometryEffect(id: "Details",
+                                                       in: self.namespace)
+
+                                Spacer()
+
+                                Button {} label: {
+                                    Image(systemName: "play.fill")
+                                        .font(.title)
+                                        .foregroundColor(.primary)
+                                }
+                                .matchedGeometryEffect(id: "play",
+                                                       in: self.namespace)
+
+                                Button {} label: {
+                                    Image(systemName: "forward.fill")
+                                        .font(.title)
+                                        .foregroundColor(.primary)
+                                }
+                                .matchedGeometryEffect(id: "forward",
+                                                       in: self.namespace)
+                            }
+                        }
+                    }
+
+                    // moving view up
+
+                    if self.showPlayer {
+
+                        VStack {
+                            VStack(alignment: .center) {
+                                Text("COMPLEXITES")
+                                    .font(.title3)
+                            }
+                            .matchedGeometryEffect(id: "Details",
+                                                   in: self.namespace)
+
+                            Slider(value: self.$progressBar)
+
+                            HStack {
+                                Button {} label: {
+                                    Image(systemName: "backward.fill")
+                                        .font(.title)
+                                        .foregroundColor(.primary)
+                                }
+
+                                Spacer()
+
+                                Button {} label: {
+                                    Image(systemName: "play.fill")
+                                        .font(.title)
+                                        .foregroundColor(.primary)
+                                }
+                                .matchedGeometryEffect(id: "play",
+                                                       in: self.namespace)
+
+                                Spacer()
+
+                                Button {} label: {
+                                    Image(systemName: "forward.fill")
+                                        .font(.title)
+                                        .foregroundColor(.primary)
+                                }
+                                .matchedGeometryEffect(id: "forward",
+                                                       in: self.namespace)
+                            }
+                            .padding(.horizontal)
+
+                            Spacer()
+                        }
+                    }
+                }
+                .padding(.all)
+                .background(Color.white.shadow(radius: Metric.shadowRadius)
+                                .onTapGesture {
+
+                    // view expand
+
+                    withAnimation(Animation.easeOut(duration: Metric.animationDuration)) {
+                        self.showPlayer.toggle()
+                    }
+                }
+                )
+            }
+            .background(Color.black.opacity(Metric.backgroundColorOpacity))
         }
-        .frame(width: Metric.playerViewWidth, height: Metric.playerViewHeight, alignment: .init(horizontal: .center, vertical: .center))
-        .padding(.top, Metric.paddingOffset)
     }
 }
 
@@ -63,15 +245,17 @@ struct PlayerView_Previews: PreviewProvider {
 
 extension PlayerView {
     enum Metric {
-        static let rectangleHeight: CGFloat = 85
-        static let rectangleOpacity: CGFloat = 0.1
-        static let firstPaddingOffset: CGFloat = 10
-        static let secondPaddingOffset: CGFloat = 30
-        static let thirdPaddingOffset: CGFloat = 30
-        static let imageFontSize: CGFloat = 30
-        static let playerViewWidth: CGFloat = 420
-        static let playerViewHeight: CGFloat = 200
-        static let paddingOffset: CGFloat = 663
+        static let shadowRadius: CGFloat = 3
+        static let animationDuration: CGFloat = 0.4
+        static let backgroundColorOpacity: CGFloat = 0.06
+        static let frameVStackHeight: CGFloat = 110
+        static let frameVStackPaddingTop: CGFloat = 640
+
+        static let imageFrameWidthAndHeight: CGFloat = 300
+        static let imageResizingWidth: CGFloat = 70
+        static let imageResizingHeight: CGFloat = 60
+        static let imagePadding: CGFloat = 35
+        static let imageResizingPadding: CGFloat = 0
     }
 }
 
