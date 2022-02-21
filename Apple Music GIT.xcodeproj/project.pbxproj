@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		821F96AA27B98B8E00A0F13F /* SearchViewUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F96A927B98B8E00A0F13F /* SearchViewUIKit.swift */; };
+		82433BA827BECA9700751A3F /* SearchViewUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82433BA727BECA9700751A3F /* SearchViewUIKit.swift */; };
 		825E29EF27AC11F4006D7472 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E29EE27AC11F4006D7472 /* RadioView.swift */; };
 		825E29F127AC1359006D7472 /* RadioModelHorizontalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E29F027AC1359006D7472 /* RadioModelHorizontalSection.swift */; };
 		825E29F427AC14DB006D7472 /* RadioViewHorizontalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E29F327AC14DB006D7472 /* RadioViewHorizontalSection.swift */; };
@@ -30,7 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		821F96A927B98B8E00A0F13F /* SearchViewUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewUIKit.swift; sourceTree = "<group>"; };
+		82433BA727BECA9700751A3F /* SearchViewUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewUIKit.swift; sourceTree = "<group>"; };
 		825E29EE27AC11F4006D7472 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
 		825E29F027AC1359006D7472 /* RadioModelHorizontalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModelHorizontalSection.swift; sourceTree = "<group>"; };
 		825E29F327AC14DB006D7472 /* RadioViewHorizontalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioViewHorizontalSection.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		821F96A727B98B3B00A0F13F /* SearchTabView UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				821F96A927B98B8E00A0F13F /* SearchViewUIKit.swift */,
+				82433BA727BECA9700751A3F /* SearchViewUIKit.swift */,
 			);
 			path = "SearchTabView UIKit";
 			sourceTree = "<group>";
@@ -322,7 +322,7 @@
 				825E29F127AC1359006D7472 /* RadioModelHorizontalSection.swift in Sources */,
 				82C7EBEE27A98FE300BBFB44 /* LibraryView.swift in Sources */,
 				82C7EBF827A9A89700BBFB44 /* PlayerView.swift in Sources */,
-				821F96AA27B98B8E00A0F13F /* SearchViewUIKit.swift in Sources */,
+				82433BA827BECA9700751A3F /* SearchViewUIKit.swift in Sources */,
 				825E29F427AC14DB006D7472 /* RadioViewHorizontalSection.swift in Sources */,
 				825E29F627AC14F7006D7472 /* RadioViewVerticalSection.swift in Sources */,
 				827ED35627B089F2002CE1ED /* SearchView.swift in Sources */,
