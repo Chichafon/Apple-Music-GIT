@@ -7,18 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82433BA827BECA9700751A3F /* SearchViewUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82433BA727BECA9700751A3F /* SearchViewUIKit.swift */; };
+		825E29EF27AC11F4006D7472 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E29EE27AC11F4006D7472 /* RadioView.swift */; };
+		825E29F127AC1359006D7472 /* RadioModelHorizontalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E29F027AC1359006D7472 /* RadioModelHorizontalSection.swift */; };
+		825E29F427AC14DB006D7472 /* RadioViewHorizontalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E29F327AC14DB006D7472 /* RadioViewHorizontalSection.swift */; };
+		825E29F627AC14F7006D7472 /* RadioViewVerticalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E29F527AC14F7006D7472 /* RadioViewVerticalSection.swift */; };
+		825E2A3427AC330F006D7472 /* RadioModelVerticalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E2A3327AC330F006D7472 /* RadioModelVerticalSection.swift */; };
+		825E2A3727AC3900006D7472 /* RadioModelHorizontalSectionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E2A3627AC3900006D7472 /* RadioModelHorizontalSectionObserver.swift */; };
+		825E2A3927AC3910006D7472 /* RadioModelVerticalSectionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E2A3827AC3910006D7472 /* RadioModelVerticalSectionObserver.swift */; };
+		827B816127B09DFD006E5B5B /* SearchViewSecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B816027B09DFD006E5B5B /* SearchViewSecondScreen.swift */; };
+		827B816427B12454006E5B5B /* SearchViewFirstHorizontalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B816327B12454006E5B5B /* SearchViewFirstHorizontalSection.swift */; };
+		827B816627B12468006E5B5B /* SearchViewSecondHorizontalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B816527B12468006E5B5B /* SearchViewSecondHorizontalSection.swift */; };
+		827ED35627B089F2002CE1ED /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827ED35527B089F2002CE1ED /* SearchView.swift */; };
 		82C7EBD927A9518F00BBFB44 /* Apple_Music_GITApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBD827A9518F00BBFB44 /* Apple_Music_GITApp.swift */; };
-		82C7EBDB27A9518F00BBFB44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBDA27A9518F00BBFB44 /* ContentView.swift */; };
+		82C7EBDB27A9518F00BBFB44 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBDA27A9518F00BBFB44 /* TabBar.swift */; };
 		82C7EBDD27A9519400BBFB44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C7EBDC27A9519400BBFB44 /* Assets.xcassets */; };
 		82C7EBE027A9519400BBFB44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C7EBDF27A9519400BBFB44 /* Preview Assets.xcassets */; };
+		82C7EBEE27A98FE300BBFB44 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBED27A98FE300BBFB44 /* LibraryView.swift */; };
+		82C7EBF327A9983800BBFB44 /* LibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBF227A9983800BBFB44 /* LibraryModel.swift */; };
+		82C7EBF527A99A4500BBFB44 /* LibraryViewSecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBF427A99A4500BBFB44 /* LibraryViewSecondScreen.swift */; };
+		82C7EBF827A9A89700BBFB44 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7EBF727A9A89700BBFB44 /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82433BA727BECA9700751A3F /* SearchViewUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewUIKit.swift; sourceTree = "<group>"; };
+		825E29EE27AC11F4006D7472 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		825E29F027AC1359006D7472 /* RadioModelHorizontalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModelHorizontalSection.swift; sourceTree = "<group>"; };
+		825E29F327AC14DB006D7472 /* RadioViewHorizontalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioViewHorizontalSection.swift; sourceTree = "<group>"; };
+		825E29F527AC14F7006D7472 /* RadioViewVerticalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioViewVerticalSection.swift; sourceTree = "<group>"; };
+		825E2A3327AC330F006D7472 /* RadioModelVerticalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModelVerticalSection.swift; sourceTree = "<group>"; };
+		825E2A3627AC3900006D7472 /* RadioModelHorizontalSectionObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModelHorizontalSectionObserver.swift; sourceTree = "<group>"; };
+		825E2A3827AC3910006D7472 /* RadioModelVerticalSectionObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModelVerticalSectionObserver.swift; sourceTree = "<group>"; };
+		827B816027B09DFD006E5B5B /* SearchViewSecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewSecondScreen.swift; sourceTree = "<group>"; };
+		827B816327B12454006E5B5B /* SearchViewFirstHorizontalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewFirstHorizontalSection.swift; sourceTree = "<group>"; };
+		827B816527B12468006E5B5B /* SearchViewSecondHorizontalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewSecondHorizontalSection.swift; sourceTree = "<group>"; };
+		827ED35527B089F2002CE1ED /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		82C7EBD527A9518F00BBFB44 /* Apple Music GIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Music GIT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C7EBD827A9518F00BBFB44 /* Apple_Music_GITApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_Music_GITApp.swift; sourceTree = "<group>"; };
-		82C7EBDA27A9518F00BBFB44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		82C7EBDA27A9518F00BBFB44 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		82C7EBDC27A9519400BBFB44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82C7EBDF27A9519400BBFB44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82C7EBED27A98FE300BBFB44 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		82C7EBF227A9983800BBFB44 /* LibraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryModel.swift; sourceTree = "<group>"; };
+		82C7EBF427A99A4500BBFB44 /* LibraryViewSecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewSecondScreen.swift; sourceTree = "<group>"; };
+		82C7EBF727A9A89700BBFB44 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +64,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		821F96A727B98B3B00A0F13F /* SearchTabView UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				82433BA727BECA9700751A3F /* SearchViewUIKit.swift */,
+			);
+			path = "SearchTabView UIKit";
+			sourceTree = "<group>";
+		};
+		821F96A827B98B5E00A0F13F /* SearchTabView SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				827ED35527B089F2002CE1ED /* SearchView.swift */,
+				827B816027B09DFD006E5B5B /* SearchViewSecondScreen.swift */,
+				827B816227B123F4006E5B5B /* SectionsView */,
+			);
+			path = "SearchTabView SwiftUI";
+			sourceTree = "<group>";
+		};
+		825E29F227AC149D006D7472 /* SectionsView */ = {
+			isa = PBXGroup;
+			children = (
+				825E29F327AC14DB006D7472 /* RadioViewHorizontalSection.swift */,
+				825E29F527AC14F7006D7472 /* RadioViewVerticalSection.swift */,
+			);
+			path = SectionsView;
+			sourceTree = "<group>";
+		};
+		825E2A3527AC38DB006D7472 /* Observers */ = {
+			isa = PBXGroup;
+			children = (
+				825E2A3627AC3900006D7472 /* RadioModelHorizontalSectionObserver.swift */,
+				825E2A3827AC3910006D7472 /* RadioModelVerticalSectionObserver.swift */,
+			);
+			path = Observers;
+			sourceTree = "<group>";
+		};
+		825E2A3A27AC398A006D7472 /* LibraryModels */ = {
+			isa = PBXGroup;
+			children = (
+				82C7EBF227A9983800BBFB44 /* LibraryModel.swift */,
+			);
+			path = LibraryModels;
+			sourceTree = "<group>";
+		};
+		825E2A3B27AC3998006D7472 /* RadioModels */ = {
+			isa = PBXGroup;
+			children = (
+				825E29F027AC1359006D7472 /* RadioModelHorizontalSection.swift */,
+				825E2A3327AC330F006D7472 /* RadioModelVerticalSection.swift */,
+				825E2A3527AC38DB006D7472 /* Observers */,
+			);
+			path = RadioModels;
+			sourceTree = "<group>";
+		};
+		827B816227B123F4006E5B5B /* SectionsView */ = {
+			isa = PBXGroup;
+			children = (
+				827B816327B12454006E5B5B /* SearchViewFirstHorizontalSection.swift */,
+				827B816527B12468006E5B5B /* SearchViewSecondHorizontalSection.swift */,
+			);
+			path = SectionsView;
+			sourceTree = "<group>";
+		};
 		82C7EBCC27A9518F00BBFB44 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +146,10 @@
 		82C7EBD727A9518F00BBFB44 /* Apple Music GIT */ = {
 			isa = PBXGroup;
 			children = (
-				82C7EBD827A9518F00BBFB44 /* Apple_Music_GITApp.swift */,
-				82C7EBDA27A9518F00BBFB44 /* ContentView.swift */,
+				82C7EBE727A98B4200BBFB44 /* View */,
+				82C7EBEF27A9948500BBFB44 /* Models */,
+				82C7EBE827A98B5000BBFB44 /* TabBar */,
+				82C7EBE627A98B3B00BBFB44 /* App */,
 				82C7EBDC27A9519400BBFB44 /* Assets.xcassets */,
 				82C7EBDE27A9519400BBFB44 /* Preview Content */,
 			);
@@ -65,6 +162,85 @@
 				82C7EBDF27A9519400BBFB44 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		82C7EBE627A98B3B00BBFB44 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				82C7EBD827A9518F00BBFB44 /* Apple_Music_GITApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		82C7EBE727A98B4200BBFB44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82C7EBE927A98F2400BBFB44 /* Moduls */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82C7EBE827A98B5000BBFB44 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				82C7EBDA27A9518F00BBFB44 /* TabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		82C7EBE927A98F2400BBFB44 /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				82C7EBF627A9A88900BBFB44 /* PlayerView */,
+				82C7EBEC27A98F8300BBFB44 /* LibraryTabView */,
+				82C7EBEB27A98F7200BBFB44 /* RadioTabView */,
+				82C7EBEA27A98F5800BBFB44 /* SearchTabView */,
+			);
+			path = Moduls;
+			sourceTree = "<group>";
+		};
+		82C7EBEA27A98F5800BBFB44 /* SearchTabView */ = {
+			isa = PBXGroup;
+			children = (
+				821F96A827B98B5E00A0F13F /* SearchTabView SwiftUI */,
+				821F96A727B98B3B00A0F13F /* SearchTabView UIKit */,
+			);
+			path = SearchTabView;
+			sourceTree = "<group>";
+		};
+		82C7EBEB27A98F7200BBFB44 /* RadioTabView */ = {
+			isa = PBXGroup;
+			children = (
+				825E29EE27AC11F4006D7472 /* RadioView.swift */,
+				825E29F227AC149D006D7472 /* SectionsView */,
+			);
+			path = RadioTabView;
+			sourceTree = "<group>";
+		};
+		82C7EBEC27A98F8300BBFB44 /* LibraryTabView */ = {
+			isa = PBXGroup;
+			children = (
+				82C7EBED27A98FE300BBFB44 /* LibraryView.swift */,
+				82C7EBF427A99A4500BBFB44 /* LibraryViewSecondScreen.swift */,
+			);
+			path = LibraryTabView;
+			sourceTree = "<group>";
+		};
+		82C7EBEF27A9948500BBFB44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				825E2A3A27AC398A006D7472 /* LibraryModels */,
+				825E2A3B27AC3998006D7472 /* RadioModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		82C7EBF627A9A88900BBFB44 /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				82C7EBF727A9A89700BBFB44 /* PlayerView.swift */,
+			);
+			path = PlayerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +313,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82C7EBDB27A9518F00BBFB44 /* ContentView.swift in Sources */,
+				827B816627B12468006E5B5B /* SearchViewSecondHorizontalSection.swift in Sources */,
+				825E2A3927AC3910006D7472 /* RadioModelVerticalSectionObserver.swift in Sources */,
+				82C7EBF527A99A4500BBFB44 /* LibraryViewSecondScreen.swift in Sources */,
+				825E29EF27AC11F4006D7472 /* RadioView.swift in Sources */,
+				82C7EBDB27A9518F00BBFB44 /* TabBar.swift in Sources */,
+				825E2A3727AC3900006D7472 /* RadioModelHorizontalSectionObserver.swift in Sources */,
+				825E29F127AC1359006D7472 /* RadioModelHorizontalSection.swift in Sources */,
+				82C7EBEE27A98FE300BBFB44 /* LibraryView.swift in Sources */,
+				82C7EBF827A9A89700BBFB44 /* PlayerView.swift in Sources */,
+				82433BA827BECA9700751A3F /* SearchViewUIKit.swift in Sources */,
+				825E29F427AC14DB006D7472 /* RadioViewHorizontalSection.swift in Sources */,
+				825E29F627AC14F7006D7472 /* RadioViewVerticalSection.swift in Sources */,
+				827ED35627B089F2002CE1ED /* SearchView.swift in Sources */,
 				82C7EBD927A9518F00BBFB44 /* Apple_Music_GITApp.swift in Sources */,
+				82C7EBF327A9983800BBFB44 /* LibraryModel.swift in Sources */,
+				827B816127B09DFD006E5B5B /* SearchViewSecondScreen.swift in Sources */,
+				827B816427B12454006E5B5B /* SearchViewFirstHorizontalSection.swift in Sources */,
+				825E2A3427AC330F006D7472 /* RadioModelVerticalSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
