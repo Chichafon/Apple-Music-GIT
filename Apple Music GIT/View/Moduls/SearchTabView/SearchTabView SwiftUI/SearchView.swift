@@ -13,6 +13,7 @@ struct SearchView: View {
 
     @State var searchText = " "
     @State var musics = RadioModelHorizontalSection.data
+    @State private var colorScheme = 1
 
     var columns = Array(
         repeating: GridItem(.flexible()),
@@ -44,7 +45,7 @@ struct SearchView: View {
                                     Image(data.image)
                                         .resizable()
                                         .frame(width: 190, height: 190)
-                                        .scaledToFit()
+                                        .aspectRatio(2, contentMode: .fill)
                                         .cornerRadius(15)
 
                                     Text(data.secondTitle)
@@ -67,25 +68,37 @@ struct SearchView: View {
         .searchable(text: $searchText,
                     placement: .navigationBarDrawer(displayMode: .always),
                     prompt: "Ваша медиатека") {
+                Picker("OneTwo", selection: $colorScheme) {
+                Button(action: { },
+                       label: { Text("Apple Music") }).tag(1)
+                Button(action: { },
+                       label: { Text("Ваша медиатека") }).tag(0)
+            }
+            .pickerStyle(SegmentedPickerStyle())
+
             ForEach(musics.filter { music in
                 searchText == "" ? true :
                 music.secondTitle.lowercased().contains(searchText.lowercased())
             }) { music in
-                    HStack(spacing: 15) {
-                        Image(music.image)
-                            .resizable()
-                            .frame(width: 50, height: 50)
+                HStack(spacing: 15) {
+                    Image(music.image)
+                        .resizable()
+                        .frame(width: 50, height: 50)
 
-                        VStack(alignment: .leading) {
-                            Text(music.secondTitle)
-                                .font(.title2)
-                                .foregroundColor(.black)
-                            Text(music.thirdTitle)
-                                .font(.title3)
-                                .foregroundColor(.gray)
-                        }
+                    VStack(alignment: .leading) {
+                        Text(music.secondTitle)
+                            .font(.title2)
+                            .foregroundColor(.black)
+                        Text(music.thirdTitle)
+                            .font(.title3)
+                            .foregroundColor(.gray)
                     }
 
+                    Spacer()
+
+                    Button(action: {},
+                           label: { Image(systemName: "ellipsis") })
+                }
                 .searchCompletion(music.secondTitle)
             }
         }
